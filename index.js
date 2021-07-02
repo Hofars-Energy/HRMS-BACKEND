@@ -9,9 +9,9 @@ const user = require("./AllRoutes/user");
 const cors = require("cors");
 mongoose.set("useUnifiedTopology", true);
 mongoose
-  .connect("mongodb://localhost/surfsup", { useNewUrlParser: true })
+  .connect("mongodb://localhost/hrms", { useNewUrlParser: true })
   .then(() => {
-    console.log("connected to mongodb databse called surfsup");
+    console.log("connected to mongodb database hrms for hrms software hofars ");
   })
   .catch((err) => {
     console.log("couldnt connect to mongodb", err);
