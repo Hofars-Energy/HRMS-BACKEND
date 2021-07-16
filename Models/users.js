@@ -2,6 +2,7 @@ const { string } = require("joi");
 const Joi = require("joi");
 const mongoose = require("mongoose");
 
+
 const userSchema = new mongoose.Schema({
   username: {
     type: String,
@@ -12,7 +13,13 @@ const userSchema = new mongoose.Schema({
     type: String,
     require: true,
   },
+  eamil: {
+    type: String,
+    require : true,
+  }
+  
 });
+
 
 function validator(body) {
   const schema = Joi.object({
